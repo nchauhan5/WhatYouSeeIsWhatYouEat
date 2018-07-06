@@ -1,0 +1,119 @@
+(tensorflow) D:\Projects\Python\FineTunedImageRecognition>python 2_vgg16_finetune.py -train training_data -val testing_data -num_class 101
+C:\Users\Nitin\Anaconda3\envs\tensorflow\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Found 80800 images belonging to 101 classes.
+Found 20200 images belonging to 101 classes.
+loading the model and the pre-trained weights...
+1 input_1
+2 block1_conv1
+3 block1_conv2
+4 block1_pool
+5 block2_conv1
+6 block2_conv2
+7 block2_pool
+8 block3_conv1
+9 block3_conv2
+10 block3_conv3
+11 block3_pool
+12 block4_conv1
+13 block4_conv2
+14 block4_conv3
+15 block4_pool
+16 block5_conv1
+17 block5_conv2
+18 block5_conv3
+19 block5_pool
+WARNING:tensorflow:From C:\Users\Nitin\Anaconda3\envs\tensorflow\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+2018-05-15 10:52:55.473497: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-05-15 10:52:55.743699: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1344] Found device 0 with properties:
+name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.645
+pciBusID: 0000:01:00.0
+totalMemory: 8.00GiB freeMemory: 6.62GiB
+2018-05-15 10:52:55.749552: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1423] Adding visible gpu devices: 0
+2018-05-15 10:52:56.307445: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-15 10:52:56.310315: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:917]      0
+2018-05-15 10:52:56.312583: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:930] 0:   N
+2018-05-15 10:52:56.314841: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6392 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1070, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Epoch 1/20
+8080/8080 [==============================] - 1513s 187ms/step - loss: 2.1465 - acc: 0.4635 - val_loss: 1.6078 - val_acc: 0.5838
+
+Epoch 00001: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 2/20
+8080/8080 [==============================] - 1621s 201ms/step - loss: 1.6660 - acc: 0.5717 - val_loss: 1.5014 - val_acc: 0.6128
+
+Epoch 00002: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 3/20
+8080/8080 [==============================] - 1660s 205ms/step - loss: 1.4562 - acc: 0.6200 - val_loss: 1.2763 - val_acc: 0.6664
+
+Epoch 00003: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 4/20
+8080/8080 [==============================] - 1519s 188ms/step - loss: 1.3082 - acc: 0.6552 - val_loss: 1.2342 - val_acc: 0.6798
+
+Epoch 00004: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 5/20
+8080/8080 [==============================] - 1545s 191ms/step - loss: 1.1968 - acc: 0.6834 - val_loss: 1.1624 - val_acc: 0.6986
+
+Epoch 00005: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 6/20
+8080/8080 [==============================] - 1555s 192ms/step - loss: 1.1006 - acc: 0.7032 - val_loss: 1.1921 - val_acc: 0.6949
+
+Epoch 00006: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 7/20
+8080/8080 [==============================] - 1510s 187ms/step - loss: 1.0276 - acc: 0.7223 - val_loss: 1.1282 - val_acc: 0.7071
+
+Epoch 00007: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 8/20
+8080/8080 [==============================] - 1548s 192ms/step - loss: 0.9541 - acc: 0.7397 - val_loss: 1.1597 - val_acc: 0.7042
+
+Epoch 00008: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 9/20
+8080/8080 [==============================] - 1515s 188ms/step - loss: 0.8888 - acc: 0.7562 - val_loss: 1.1234 - val_acc: 0.7118
+
+Epoch 00009: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 10/20
+8080/8080 [==============================] - 1489s 184ms/step - loss: 0.8312 - acc: 0.7694 - val_loss: 1.1449 - val_acc: 0.7140
+
+Epoch 00010: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 11/20
+8080/8080 [==============================] - 1519s 188ms/step - loss: 0.7742 - acc: 0.7831 - val_loss: 1.1577 - val_acc: 0.7162
+
+Epoch 00011: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 12/20
+8080/8080 [==============================] - 1507s 187ms/step - loss: 0.7234 - acc: 0.7969 - val_loss: 1.1258 - val_acc: 0.7185
+
+Epoch 00012: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 13/20
+8080/8080 [==============================] - 1491s 185ms/step - loss: 0.6771 - acc: 0.8078 - val_loss: 1.1990 - val_acc: 0.7119
+
+Epoch 00013: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 14/20
+8080/8080 [==============================] - 1477s 183ms/step - loss: 0.6326 - acc: 0.8166 - val_loss: 1.1275 - val_acc: 0.7268
+
+Epoch 00014: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 15/20
+8080/8080 [==============================] - 1475s 183ms/step - loss: 0.5885 - acc: 0.8290 - val_loss: 1.1163 - val_acc: 0.7340
+
+Epoch 00015: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 16/20
+8080/8080 [==============================] - 1476s 183ms/step - loss: 0.5548 - acc: 0.8357 - val_loss: 1.1500 - val_acc: 0.7186
+
+Epoch 00016: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 17/20
+8080/8080 [==============================] - 1473s 182ms/step - loss: 0.5126 - acc: 0.8475 - val_loss: 1.3065 - val_acc: 0.7190
+
+Epoch 00017: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 18/20
+8080/8080 [==============================] - 1473s 182ms/step - loss: 0.4847 - acc: 0.8555 - val_loss: 1.1509 - val_acc: 0.7402
+
+Epoch 00018: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 19/20
+8080/8080 [==============================] - 1475s 183ms/step - loss: 0.4525 - acc: 0.8636 - val_loss: 1.2690 - val_acc: 0.7203
+
+Epoch 00019: saving model to cv-tricks_fine_tuned_model.h5
+Epoch 20/20
+8080/8080 [==============================] - 1560s 193ms/step - loss: 0.4218 - acc: 0.8732 - val_loss: 1.2372 - val_acc: 0.7282
+
+Epoch 00020: saving model to cv-tricks_fine_tuned_model.h5

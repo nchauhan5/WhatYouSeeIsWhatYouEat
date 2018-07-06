@@ -1,0 +1,25 @@
+body{
+	background:#dbdbdb;
+}
+
+header{
+	text-align: center;
+	text-shadow: 2px 2px 8px #FF0000;
+	color: white;
+	font-family: "Georgia", "Times New Roman", sans-serif;
+	font-style: italic;
+	padding: 5px 0 5px 0;
+	font-size: 30px;
+	background: #2772ea;
+}
+
+.embed-responsive{
+	width:80%;
+	height:66%;
+	margin:0.5% 10% 0 10%;
+	overflow:all;
+}
+
+.btn{
+	margin:0.5% 0 0 44%;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>What you see is what you eat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/btstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main1.css') }}">
+
+</head>
+<body>
+	<header>What you see is what you eat</header>
+    <div class="embed-responsive embed-responsive-16by9">
+    	<iframe class="embed-responsive-item" src="http://192.168.10.1/video/livesp.asp" name="myFrame" width="1200" height="600"></iframe>
+    </div>
+    <p><a class="btn btn-primary btn-lg" href="http://127.0.0.1:5000/snapshot" role="button">Take a Snapshot</a></p>
+	
+
+</body>
+</html>   

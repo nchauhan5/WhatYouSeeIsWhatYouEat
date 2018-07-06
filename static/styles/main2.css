@@ -1,0 +1,41 @@
+body{
+	background:#dbdbdb;
+}
+
+header{
+	text-align: center;
+	text-shadow: 2px 2px 8px #FF0000;
+	color: white;
+	font-family: "Georgia", "Times New Roman", sans-serif;
+	font-style: italic;
+	padding: 5px 0 5px 0;
+	font-size: 30px;
+	background: #2772ea;
+}
+
+h4{
+	text-align: center;
+}
+
+img{
+	border: 2px solid black;
+	width:600px;
+	height:500px;
+	margin:0 30% 0.5% 28%;
+	overflow:auto;
+}
+
+
+#btn1{
+	margin:0.5% 45%;
+}
+
+
+.input-group{
+	margin:0 35%;
+}
+
+
+.form-control{
+	float:left;
+}

@@ -1,0 +1,94 @@
+@font-face{
+ font-family:"digital-7";
+ src: url('font/digital-7/digital-7.ttf');
+}
+
+.top_header{
+	text-align: center;
+	text-shadow: 2px 2px 8px #FF0000;
+	color: white;
+	font-family: "Georgia", "Times New Roman", sans-serif;
+	font-style: italic;
+	padding: 5px 0 5px 0;
+	font-size: 30px;
+	background: #2772ea;
+}
+
+body {
+  font-size: small;
+  line-height: 1.4;
+  background:#dbdbdb;
+}
+p {
+  margin: 0;
+}
+
+img{
+  border: 2px solid black;
+	width:600px;
+	height:500px;
+	margin:0.5% 0 0.5% 10%;
+	overflow:auto;
+	float:left;
+}
+
+.nutrition-facts {
+  border: 1px solid black;
+  margin: 20px;
+  float: right;
+  width: 23%;
+  margin-right: 12%;
+  /*width: 280px;*/
+  padding: 0.5rem;
+  background:white;
+  table {
+    border-collapse: collapse;
+  }
+}
+
+.nutrition-facts__title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.performance-facts__header {
+  border-bottom: 10px solid black;
+  padding: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
+  p {
+    margin: 0;
+  }
+}
+
+.nutrient_unit{
+  font-weight: bold;
+}
+
+.right_col{
+	font-family: "digital-7","Times New Roman", sans-serif;
+    background:#bac3d3;
+}
+
+#itm1{
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    background:white;
+	border: 1px solid black;
+	padding:5px;
+	width:600px;
+	text-overflow: clip;
+	margin-left:10%;
+}
+
+#itm1,#itm2,#itm3{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+	display:inline-block;
+    margin-bottom: 0.5%	
+}
+
+#itm2,#itm3{
+	margin-left:7%;
+}

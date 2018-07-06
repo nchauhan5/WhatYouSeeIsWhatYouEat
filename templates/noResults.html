@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<title>What you see is what you eat</title>
+			<<link rel="stylesheet" href="{{ url_for('static', filename='styles/btstrap.css') }}">
+            <link rel="stylesheet" href="{{ url_for('static', filename='styles/main3.css') }}">
+	</head>
+	<body>
+		<header class="top_header">What you see is what you eat</header>
+			<img src="{{ url_for('static', filename='food/test_image.jpg') }}" alt="Food Image">
+
+				<section class="bottom_buttons">
+					<div id="itm1">
+						<p>
+							<h4>{{ error_message }}</h4>
+						</p>
+					</div>
+					<div id="itm2">
+						<p>
+							<a class="btn btn-primary btn-lg" href="http://127.0.0.1:5000/" role="button">Take a Snapshot Again</a>
+						</p>
+					</div>
+				</section>
+	</body>
+</html>   

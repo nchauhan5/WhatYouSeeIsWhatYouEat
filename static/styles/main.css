@@ -1,0 +1,52 @@
+body:{
+	margin:0;
+}
+
+header{
+	
+	background:#999;
+	color:white;
+	margin:0;
+	padding:15px 15px 0px 15px;
+}
+
+header h1{
+	margin:0;
+	display:inline;
+}
+
+nav ul{
+	margin: 0;
+	padding:0 0 0 15px;
+	display:inline;
+}
+
+nav ul li{
+	background: blue;
+	color: white;
+	list-style-type: none;
+	display: inline-block;
+	padding:5px 15px;
+	margin:0;
+}
+
+nav ul li a{
+	color:white;
+}
+
+.row{
+
+}
+
+.col{
+	background:#777;
+	border-radius: 10px;
+	padding:2px 0.5%;
+	float: left;
+	margin:0.5%;
+	width:31%;
+}
+
+footer{
+	clear: both;
+}

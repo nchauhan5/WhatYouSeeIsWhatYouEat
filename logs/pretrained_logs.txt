@@ -1,0 +1,119 @@
+(tensorflow) D:\Projects\Python\FineTunedImageRecognition>python 1_vgg16_pretrain.py -train training_data -val testing_data -num_class 101
+C:\Users\Nitin\Anaconda3\envs\tensorflow\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Found 80800 images belonging to 101 classes.
+Found 20200 images belonging to 101 classes.
+loading the model and the pre-trained weights...
+2018-05-15 03:26:36.234679: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2018-05-15 03:26:36.528867: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1344] Found device 0 with properties:
+name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.645
+pciBusID: 0000:01:00.0
+totalMemory: 8.00GiB freeMemory: 6.62GiB
+2018-05-15 03:26:36.534851: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1423] Adding visible gpu devices: 0
+2018-05-15 03:26:38.237258: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-15 03:26:38.240377: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:917]      0
+2018-05-15 03:26:38.242890: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:930] 0:   N
+2018-05-15 03:26:38.244546: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6392 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1070, pci bus id: 0000:01:00.0, compute capability: 6.1)
+1 input_1
+2 block1_conv1
+3 block1_conv2
+4 block1_pool
+5 block2_conv1
+6 block2_conv2
+7 block2_pool
+8 block3_conv1
+9 block3_conv2
+10 block3_conv3
+11 block3_pool
+12 block4_conv1
+13 block4_conv2
+14 block4_conv3
+15 block4_pool
+16 block5_conv1
+17 block5_conv2
+18 block5_conv3
+19 block5_pool
+WARNING:tensorflow:From C:\Users\Nitin\Anaconda3\envs\tensorflow\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+Epoch 1/20
+8080/8080 [==============================] - 3280s 406ms/step - loss: 3.4120 - acc: 0.2028 - val_loss: 2.8564 - val_acc: 0.3025
+
+Epoch 00001: val_loss improved from inf to 2.85637, saving model to cv-tricks_pretrained_model.h5
+Epoch 2/20
+8080/8080 [==============================] - 1141s 141ms/step - loss: 2.9689 - acc: 0.2865 - val_loss: 2.7146 - val_acc: 0.3411
+
+Epoch 00002: val_loss improved from 2.85637 to 2.71460, saving model to cv-tricks_pretrained_model.h5
+Epoch 3/20
+8080/8080 [==============================] - 1142s 141ms/step - loss: 2.8695 - acc: 0.3103 - val_loss: 2.6540 - val_acc: 0.3537
+
+Epoch 00003: val_loss improved from 2.71460 to 2.65396, saving model to cv-tricks_pretrained_model.h5
+Epoch 4/20
+8080/8080 [==============================] - 1142s 141ms/step - loss: 2.8157 - acc: 0.3216 - val_loss: 2.5837 - val_acc: 0.3676
+
+Epoch 00004: val_loss improved from 2.65396 to 2.58366, saving model to cv-tricks_pretrained_model.h5
+Epoch 5/20
+8080/8080 [==============================] - 1148s 142ms/step - loss: 2.7812 - acc: 0.3277 - val_loss: 2.5857 - val_acc: 0.3703
+
+Epoch 00005: val_loss did not improve from 2.58366
+Epoch 6/20
+8080/8080 [==============================] - 1141s 141ms/step - loss: 2.7596 - acc: 0.3344 - val_loss: 2.5980 - val_acc: 0.3696
+
+Epoch 00006: val_loss did not improve from 2.58366
+Epoch 7/20
+8080/8080 [==============================] - 1128s 140ms/step - loss: 2.7397 - acc: 0.3364 - val_loss: 2.5158 - val_acc: 0.3830
+
+Epoch 00007: val_loss improved from 2.58366 to 2.51582, saving model to cv-tricks_pretrained_model.h5
+Epoch 8/20
+8080/8080 [==============================] - 1148s 142ms/step - loss: 2.7196 - acc: 0.3392 - val_loss: 2.5661 - val_acc: 0.3766
+
+Epoch 00008: val_loss did not improve from 2.51582
+Epoch 9/20
+8080/8080 [==============================] - 1144s 142ms/step - loss: 2.7148 - acc: 0.3447 - val_loss: 2.5676 - val_acc: 0.3718
+
+Epoch 00009: val_loss did not improve from 2.51582
+Epoch 10/20
+8080/8080 [==============================] - 1145s 142ms/step - loss: 2.6991 - acc: 0.3471 - val_loss: 2.5571 - val_acc: 0.3799
+
+Epoch 00010: val_loss did not improve from 2.51582
+Epoch 11/20
+8080/8080 [==============================] - 1164s 144ms/step - loss: 2.6869 - acc: 0.3480 - val_loss: 2.5031 - val_acc: 0.3871
+
+Epoch 00011: val_loss improved from 2.51582 to 2.50313, saving model to cv-tricks_pretrained_model.h5
+Epoch 12/20
+8080/8080 [==============================] - 1178s 146ms/step - loss: 2.6772 - acc: 0.3511 - val_loss: 2.5277 - val_acc: 0.3839
+
+Epoch 00012: val_loss did not improve from 2.50313
+Epoch 13/20
+8080/8080 [==============================] - 1146s 142ms/step - loss: 2.6686 - acc: 0.3529 - val_loss: 2.4925 - val_acc: 0.3916
+
+Epoch 00013: val_loss improved from 2.50313 to 2.49246, saving model to cv-tricks_pretrained_model.h5
+Epoch 14/20
+8080/8080 [==============================] - 1143s 141ms/step - loss: 2.6663 - acc: 0.3541 - val_loss: 2.5216 - val_acc: 0.3842
+
+Epoch 00014: val_loss did not improve from 2.49246
+Epoch 15/20
+8080/8080 [==============================] - 1126s 139ms/step - loss: 2.6596 - acc: 0.3575 - val_loss: 2.5003 - val_acc: 0.3872
+
+Epoch 00015: val_loss did not improve from 2.49246
+Epoch 16/20
+8080/8080 [==============================] - 1137s 141ms/step - loss: 2.6527 - acc: 0.3576 - val_loss: 2.4823 - val_acc: 0.3922
+
+Epoch 00016: val_loss improved from 2.49246 to 2.48233, saving model to cv-tricks_pretrained_model.h5
+Epoch 17/20
+8080/8080 [==============================] - 1148s 142ms/step - loss: 2.6446 - acc: 0.3599 - val_loss: 2.4878 - val_acc: 0.3938
+
+Epoch 00017: val_loss did not improve from 2.48233
+Epoch 18/20
+8080/8080 [==============================] - 1164s 144ms/step - loss: 2.6407 - acc: 0.3610 - val_loss: 2.4983 - val_acc: 0.3925
+
+Epoch 00018: val_loss did not improve from 2.48233
+Epoch 19/20
+8080/8080 [==============================] - 1191s 147ms/step - loss: 2.6365 - acc: 0.3615 - val_loss: 2.4712 - val_acc: 0.3986
+
+Epoch 00019: val_loss improved from 2.48233 to 2.47116, saving model to cv-tricks_pretrained_model.h5
+Epoch 20/20
+8080/8080 [==============================] - 1169s 145ms/step - loss: 2.6376 - acc: 0.3629 - val_loss: 2.5161 - val_acc: 0.3888
+
+Epoch 00020: val_loss did not improve from 2.47116

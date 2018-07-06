@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What you see is what you eat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/btstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main3.css') }}">
+</head>
+<body>
+	<header class="top_header">What you see is what you eat</header>
+    <img src="{{ url_for('static', filename='food/test_image.jpg') }}" alt="Food Image">
+
+<section class="nutrition-facts">
+  <header class="nutrition-facts__header">
+    <h1 class="nutrition-facts__title">Nutrition Facts</h1>
+    
+   {% if nutrients is not none %}
+   <p>Serving Size: {{ weight }} g
+   {% endif %}
+  </header>
+  
+  <div class="nutrient_unit">
+  <font size="2">
+	<table border="1">
+	{% if nutrients is not none %}
+	 <tr>
+         <th>Nutrient Name</th>
+         <th>Quantity (per serving size)</th> 
+    </tr>
+	{% for nutrient in nutrients %}
+    <tr>
+        <td>
+            {{ nutrient.name }}
+        </td>
+        <td class="right_col">
+            
+            {{ nutrient.value }} {{ nutrient.unit }}
+            
+        </td>
+    </tr>
+    {% endfor %}
+	{% endif %}
+	{% if error is not none %}
+	<tr>
+        {{ error }}
+    </tr>
+    {% endif %}
+    </table>
+    </font>
+    </div>
+</section>
+	
+<section class="bottom_buttons">
+<div id="itm1">
+    <p><h4>The dish you selected is {{ dish_name }}</h4></p>
+</div>
+<div id="itm2">
+		<p><a class="btn btn-primary btn-lg" href="http://127.0.0.1:5000/" role="button">Take a Snapshot Again</a></p>
+</div>
+</section>    
+
+</body>
+</html>   
